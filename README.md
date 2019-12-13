@@ -1,13 +1,13 @@
 # This is a markdown text file
 It's not code, it's plain text. You can document anything this way, from a quick note, through to writing a whole book.
 
-You're welcome to edit this file to learn how the process works!
+You're welcome to **edit** this file to learn how the process works!
 
 You can do formatting in markdown documents even though it's plain text. For example, by putting `**` around the next words: **this is now bold**.
 
 ## How to edit this file
 
-1. Click the Edit icon in the top right.
+1. Click the Edit icon (pencil) in the top right. ![edit_icon.png](edit_icon.png)
 2. Make your changes using the on-screen editor.
 3. At the bottom of the editor screen you'll see:
     1. Write a one line summary of what changed, i.e. _"testing out editing"_
