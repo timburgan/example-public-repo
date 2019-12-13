@@ -1,9 +1,12 @@
 # This is a markdown text file
-It's not code, it's plain text. You can document anything this way, from a quick note, through to writing a whole book.
 
-You're welcome to **edit** this file to learn how the process works!
+It's not code, it's plain text. You can document anything this way, from a brief note, through to writing a whole book.
+
+You're welcome to **edit** this file to learn how the process works! Anyone can propose an edit!
 
 You can do formatting in markdown documents even though it's plain text. For example, by putting `**` around the next words: **this is now bold**.
+
+I think we should add a whole new line here like this.
 
 ## How to edit this file
 
