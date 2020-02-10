@@ -1,4 +1,4 @@
-name: Add `/shipit` comment
+name: Check: Can we `/shipit`?
 
 on:
   pull_request_review:
