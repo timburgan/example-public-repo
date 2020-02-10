@@ -12,6 +12,7 @@ jobs:
     - name: Add comment to Pull Request
       # if: github.event.review.state == 'approved'
       run: |
+        echo github.event.review.state
         curl --request POST \
           --data '{"body": "reviewed"}' \
           --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
