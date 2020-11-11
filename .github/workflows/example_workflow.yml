@@ -24,4 +24,4 @@ jobs:
         ruby -e "puts ENV['REPOSITORY']"
         ruby <<[-]EORUBY
           puts "hi mum."
-        EORUBY
+        [-]EORUBY
