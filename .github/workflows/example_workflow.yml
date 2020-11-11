@@ -1,19 +1,24 @@
-name: "Check: Can we `/shipit`?"
+name: "Chess"
 
 on:
-  pull_request_review:
-#    branches:
-#      - 'dependabot/**'
+  issues:
+    types: [opened]
 
 jobs:
-  shipit_job:
+  move:
     runs-on: ubuntu-latest
+    if: startsWith(github.event.issue.title, 'test|')
     steps:
-    - name: Add comment to Pull Request
-      if: github.event.review.state == 'approved'
+
+    - name: Set env vars
       run: |
-        curl --request POST \
-          --data '{"body": "/shipit"}' \
-          --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}' \
-          --header 'content-type: application/json' \
-          --url https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.pull_request.number }}/comments
+        echo "REPOSITORY=${{ github.repository }}" >> $GITHUB_ENV
+
+    - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7.1
+
+    - name: Play
+      run: |
+        ruby "puts 'hello from Ruby.'
+        ruby "puts ENV['REPOSITORY']"
