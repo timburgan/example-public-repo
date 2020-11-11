@@ -20,5 +20,5 @@ jobs:
 
     - name: Play
       run: |
-        ruby "puts 'hello from Ruby.'
+        ruby "puts 'hello from Ruby.'"
         ruby "puts ENV['REPOSITORY']"
