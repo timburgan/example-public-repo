@@ -22,6 +22,6 @@ jobs:
       run: |
         ruby -e "puts 'hello from Ruby.'"
         ruby -e "puts ENV['REPOSITORY']"
-        ruby <<[-]EORUBY
+        ruby <<- EORUBY
           puts "hi mum."
-        [-]EORUBY
+        EORUBY
